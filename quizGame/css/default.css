@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: Kenzotiqua;
+  src: url("../fonts/Kenzotiqua.ttf");
+
+}
+#logo{
+	background-color:rgba(255,255,255,.90);
+	border-radius: 15px 15px 15px 15px;
+	text-align:center;
+	color:#444444;
+	text-shadow:5px 5px 10px #90561E;
+}
+.nav>li>a{
+	color:#292929;
+	}
+.nav>li>a:hover{
+	color:#848484;
+}
+.nav>li>a:hover,
+.nav>li>a:focus{
+	background-color: transparent;
+	}
+
+
+#menuprincipal{
+	float:right;
+	background-color:rgba(255,255,255,.90);
+
+	margin-top:5px;
+	border-radius: 10px 10px 00px 10px;
+	border: 3px;
+	border-style: solid;
+
+	}
+
+*{
+	margin:0px;
+	padding:0px;
+
+}
+body{
+	background:url(../images/background.jpg);
+	background-size: cover;
+	background-repeat:no-repeat;
+	position:absolute;
+}
+#contenido{
+	margin-top: 10px;
+	}
+#panel1 video{
+	background-color:rgba(0,0,0,0.81);
+	}
+#panel1{
+	background-color:rgba(255,255,255,.40);
+	border-radius: 10px 10px 00px 10px;
+	border: 3px;
+	border-style: solid;
+
+	padding:10px;
+	opacity:1;
+
+}
+#panel1>h3{
+	margin-top:2px;
+
+}
+
+#panel2{
+
+	background-color: rgba(255,255,255,.4);
+
+	padding:10px;
+	border-radius: 10px 10px 00px 10px;
+	border: 3px;
+	border-style: solid;
+}
+#footermain{
+	text-align: center;
+	margin-top:50px;
+	color:#FFFFFF;
+}
+#footermain a{
+	color:#FFFFFF;}
+img#logomariano {
+float: left;
+}
+
