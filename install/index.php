@@ -11,12 +11,13 @@
     </head>
     <body>
         <?php
-            include "../functions/loadlang.php";
+            include_once "../functions/loadlang.php";
             if(!(is_writable("../config.php"))){
                 die ($lang["ERRW"]);
             }
 
         ?>
+
         <div id="content">
             <?php
     if(!isset($_GET['page'])){
@@ -110,7 +111,7 @@
                     if(!($con -> query($sql))){
                         echo "Error: ". $con->error;
                     }else{
-                        echo '<h1>Instalación Completada, Borre la carpta install</h1>'
+                        echo '<h1>Instalación Completada, Borre la carpta install</h1>';
                     }
                 }else{
                 ?>
@@ -137,7 +138,7 @@
         }
 
     }
-?>
+            ?>
 
         </div>
     </body>
