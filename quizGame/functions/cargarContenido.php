@@ -1,6 +1,12 @@
 <?php
-include ("../config2.php");
-conectar();
+    $con;
+        include_once "../../config.php";
+
+        $con = new mysqli($_DBHOST,$_DBUSER,$_DBPASS,$_DBNAME);
+        if($con->connect_errno){
+            echo "Error";
+        }
+
 $idv;
 
 $variablephp = $_GET['categoria'];
@@ -17,7 +23,7 @@ $pregAlea= rand(1, 2);
 $resultados=array("","","","");
 $resultadosAct=array(0,0,0,0);
 if($pregAlea==1){
-	echo '<video width="350" height="200" src="../data/videos/esp/'.$idv[$indexVideo].'.mp4" preload="auto" controls muted autoplay loop ></video>';
+	echo '<video width="350" height="200" src="../data/videos/esp/'.$idv[$indexVideo].'.webm" preload="auto" controls muted autoplay loop ></video>';
 	echo '<p><h4>¿Que significa en Ingles?</h4>
 	</p>';
 	$pos =  rand(0, 3);
@@ -98,7 +104,7 @@ if($pregAlea==1){
 
 
 }else{
-	echo '<video width="350" height="200" src="../data/videos/ing/'.$idv[$indexVideo].'.mp4" preload="auto" controls muted autoplay loop ></video>';
+	echo '<video width="350" height="200" src="../data/videos/ing/'.$idv[$indexVideo].'.webm" preload="auto" controls muted autoplay loop ></video>';
 	echo '<p><h4>¿Que significa en Español?</h4>
 	</p>';
 	$pos =  rand(0, 3);
